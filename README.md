@@ -13,6 +13,8 @@ In the repository, you will find a pre-prepared semantic model along with source
 
 ### Solution
 
+**Please find the dashboard in the "References.pbip" file.**
+
 When analysing the data, numerous issues were found, such as incomplete fields and incorrect data inputs from users (such as job roles not being input correctly). 
 
 In addition, it seems as if multiple employees were assigned to one job role. This could have been due to different people being assigned to review different stages of the review process but there was no clear defintion of this within the semantic model.
