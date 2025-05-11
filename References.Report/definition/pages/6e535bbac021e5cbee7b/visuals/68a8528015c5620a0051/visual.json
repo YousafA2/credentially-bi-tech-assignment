@@ -1,0 +1,259 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.5.0/schema.json",
+  "name": "68a8528015c5620a0051",
+  "position": {
+    "x": 0,
+    "y": 241.95121951219514,
+    "z": 5000,
+    "height": 184.39024390243904,
+    "width": 1280,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "#DateTable"
+                    }
+                  },
+                  "Property": "Year - Full"
+                }
+              },
+              "queryRef": "#DateTable.Year - Full",
+              "nativeQueryRef": "Year - Full",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "#DateTable"
+                    }
+                  },
+                  "Property": "Month - Full"
+                }
+              },
+              "queryRef": "#DateTable.Month - Full",
+              "nativeQueryRef": "Month - Full",
+              "active": true
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ref_references"
+                    }
+                  },
+                  "Property": "Rolling Avg Requested to Reviewed Days"
+                }
+              },
+              "queryRef": "ref_references.Rolling Avg Requested to Reviewed Days",
+              "nativeQueryRef": "Rolling Avg Requested to Reviewed Days"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ref_references"
+                    }
+                  },
+                  "Property": "Rolling Avg Requested to Submitted Days"
+                }
+              },
+              "queryRef": "ref_references.Rolling Avg Requested to Submitted Days",
+              "nativeQueryRef": "Rolling Avg Requested to Submitted Days"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ref_references"
+                    }
+                  },
+                  "Property": "Rolling Avg Submitted to Reviewed Days"
+                }
+              },
+              "queryRef": "ref_references.Rolling Avg Submitted to Reviewed Days",
+              "nativeQueryRef": "Rolling Avg Submitted to Reviewed Days"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ref_references"
+                    }
+                  },
+                  "Property": "Number of Approved References"
+                }
+              },
+              "queryRef": "ref_references.Number of Approved References",
+              "nativeQueryRef": "Number of Approved References"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ref_references"
+                    }
+                  },
+                  "Property": "Number of Submitted References"
+                }
+              },
+              "queryRef": "ref_references.Number of Submitted References",
+              "nativeQueryRef": "Number of Submitted References"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "#DateTable"
+                  }
+                },
+                "Property": "Year - Full"
+              }
+            },
+            "direction": "Ascending"
+          },
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "#DateTable"
+                  }
+                },
+                "Property": "Month - Full"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "expansionStates": [
+      {
+        "roles": [
+          "Rows"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "#DateTable.Year - Full"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "#DateTable"
+                    }
+                  },
+                  "Property": "Year - Full"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "#DateTable.Month - Full"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "#DateTable"
+                    }
+                  },
+                  "Property": "Month - Full"
+                }
+              }
+            ],
+            "isPinned": true
+          }
+        ],
+        "root": {
+          "children": [
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "2018L"
+                  }
+                }
+              ],
+              "isToggled": true,
+              "children": [
+                {
+                  "identityValues": [
+                    {
+                      "Literal": {
+                        "Value": "'December'"
+                      }
+                    }
+                  ],
+                  "isToggled": true
+                }
+              ]
+            },
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "2019L"
+                  }
+                }
+              ],
+              "isToggled": true
+            }
+          ]
+        }
+      }
+    ],
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "224.64232288037167D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ref_references.Rolling Avg Requested to Reviewed Days"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

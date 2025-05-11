@@ -1,0 +1,124 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.5.0/schema.json",
+  "name": "a10a2b827db39622b0c9",
+  "position": {
+    "x": 666.97757847533637,
+    "y": 441.97309417040361,
+    "z": 12004,
+    "height": 329.4708520179372,
+    "width": 613.02242152466363,
+    "tabOrder": 13002
+  },
+  "visual": {
+    "visualType": "hundredPercentStackedColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "#DateTable"
+                    }
+                  },
+                  "Property": "Year - Full"
+                }
+              },
+              "queryRef": "#DateTable.Year - Full",
+              "nativeQueryRef": "Sum of Year - Full",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ref_references"
+                    }
+                  },
+                  "Property": "Avg Requested To Submitted Days"
+                }
+              },
+              "queryRef": "ref_references.Avg Requested To Submitted Days",
+              "nativeQueryRef": "Avg Requested To Submitted Days"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ref_references"
+                    }
+                  },
+                  "Property": "Avg Submitted To Reviewed Days"
+                }
+              },
+              "queryRef": "ref_references.Avg Submitted To Reviewed Days",
+              "nativeQueryRef": "Avg Submitted To Reviewed Days"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "categoryAxis": [
+        {
+          "properties": {
+            "titleText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Year'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Req to Sub and Sub to Rev Proportions'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

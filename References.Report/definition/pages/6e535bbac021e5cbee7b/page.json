@@ -3,69 +3,14 @@
   "name": "6e535bbac021e5cbee7b",
   "displayName": "References",
   "displayOption": "FitToPage",
-  "height": 720,
+  "height": 800,
   "width": 1280,
   "filterConfig": {
     "filters": [
       {
-        "name": "04c4812b76499462c8af",
-        "ordinal": 0,
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "ref_references"
-              }
-            },
-            "Property": "job_position_id"
-          }
-        },
-        "type": "Advanced",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "r",
-              "Entity": "ref_references",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "Not": {
-                  "Expression": {
-                    "Comparison": {
-                      "ComparisonKind": 0,
-                      "Left": {
-                        "Column": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Source": "r"
-                            }
-                          },
-                          "Property": "job_position_id"
-                        }
-                      },
-                      "Right": {
-                        "Literal": {
-                          "Value": "null"
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
-        "howCreated": "User",
-        "isHiddenInViewMode": true
-      },
-      {
         "name": "01dc580177a6524e1247",
         "displayName": "Role",
-        "ordinal": 1,
+        "ordinal": 0,
         "field": {
           "Column": {
             "Expression": {
@@ -97,7 +42,7 @@
       {
         "name": "f6f16b643bb6f29c7cbf",
         "displayName": "User tag",
-        "ordinal": 2,
+        "ordinal": 1,
         "field": {
           "Column": {
             "Expression": {
@@ -129,7 +74,7 @@
       {
         "name": "6aa8ea930e1e0480568c",
         "displayName": "Assigned to",
-        "ordinal": 3,
+        "ordinal": 2,
         "field": {
           "Column": {
             "Expression": {
@@ -161,7 +106,7 @@
       {
         "name": "d8d641477bb83b5aa7e0",
         "displayName": "Staff member status",
-        "ordinal": 4,
+        "ordinal": 3,
         "field": {
           "Column": {
             "Expression": {
@@ -178,7 +123,7 @@
       {
         "name": "60f5cf8b925ac97840b2",
         "displayName": "Is signed off",
-        "ordinal": 5,
+        "ordinal": 4,
         "field": {
           "Column": {
             "Expression": {
@@ -195,7 +140,7 @@
       {
         "name": "dfbbc9ccfb2119b636c9",
         "displayName": "Is mandatory",
-        "ordinal": 6,
+        "ordinal": 5,
         "field": {
           "Column": {
             "Expression": {
@@ -212,7 +157,7 @@
       {
         "name": "cb41bfe9950973c8de9b",
         "displayName": "Reference form name",
-        "ordinal": 7,
+        "ordinal": 6,
         "field": {
           "Column": {
             "Expression": {
@@ -229,7 +174,7 @@
       {
         "name": "a723d018b12f47744455",
         "displayName": "Compliance package",
-        "ordinal": 8,
+        "ordinal": 7,
         "field": {
           "Column": {
             "Expression": {
@@ -246,7 +191,7 @@
       {
         "name": "97afae6e985199feceb2",
         "displayName": "Group",
-        "ordinal": 9,
+        "ordinal": 8,
         "field": {
           "Column": {
             "Expression": {
@@ -291,8 +236,9 @@
             "solid": {
               "color": {
                 "expr": {
-                  "Literal": {
-                    "Value": "'#F3F5FA'"
+                  "ThemeDataColor": {
+                    "ColorId": 0,
+                    "Percent": 0
                   }
                 }
               }
@@ -301,5 +247,22 @@
         }
       }
     ]
-  }
+  },
+  "visualInteractions": [
+    {
+      "source": "0cbdc25322b6e2e83a13",
+      "target": "a3e0d6b079c0e56c1a75",
+      "type": "NoFilter"
+    },
+    {
+      "source": "0cbdc25322b6e2e83a13",
+      "target": "96c3c6994672754c9114",
+      "type": "NoFilter"
+    },
+    {
+      "source": "0cbdc25322b6e2e83a13",
+      "target": "15a00890edc09b03ea60",
+      "type": "NoFilter"
+    }
+  ]
 }

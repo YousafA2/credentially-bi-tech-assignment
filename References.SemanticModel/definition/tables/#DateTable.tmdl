@@ -1,0 +1,274 @@
+table #DateTable
+	lineageTag: 5652d301-5b56-46c5-bcc8-d763663bf53b
+
+	column Date
+		formatString: General Date
+		lineageTag: a88f3e47-6c0d-41a0-954b-3ef7c0d4b30d
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Year - Full'
+		formatString: 0
+		lineageTag: 20f2538c-cd79-4148-bc8e-74564d556e97
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Year - Full]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Year - Short'
+		lineageTag: f2e808de-27b2-47c4-b051-fd6de887fd95
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Year - Short]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column MonthNumber
+		formatString: 0
+		lineageTag: 497a7780-af4a-4147-92fe-b9f7ec2fcc0d
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [MonthNumber]
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthNumberFull
+		lineageTag: f94e52f0-1697-47a9-b555-f55e9209458a
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [MonthNumberFull]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month - Full'
+		lineageTag: a23a3a7f-39f2-4cdd-8701-b1c21d9f27f5
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month - Full]
+		sortByColumn: MonthNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month - Short'
+		lineageTag: f845433b-9955-4811-82b4-84447bdfe5d6
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month - Short]
+
+		annotation SummarizationSetBy = Automatic
+
+	column WeekNumber
+		formatString: 0
+		lineageTag: 9df9ac94-bf58-4912-a964-d8294d9c21ec
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [WeekNumber]
+
+		annotation SummarizationSetBy = Automatic
+
+	column WeekNumberFull
+		lineageTag: a973dd41-95ef-4d6a-8cd8-5fd97b675e0f
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [WeekNumberFull]
+
+		annotation SummarizationSetBy = Automatic
+
+	column QuarterFull
+		lineageTag: cafde3ef-d5b3-42fe-93fc-2f841f48d3bc
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [QuarterFull]
+
+		annotation SummarizationSetBy = Automatic
+
+	column QuarterNumber
+		lineageTag: 9707aa59-2364-49ca-977b-8f308238b967
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [QuarterNumber]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column QuarterAndYear
+		lineageTag: 911e2475-bff9-4301-ac26-d79a6e18fff8
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [QuarterAndYear]
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearMonthNum
+		lineageTag: 6506fb21-f7da-45db-bb3d-05786feee842
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [YearMonthNum]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Quarter
+		lineageTag: 3a4f14f1-ae7d-4c20-92f2-7a084483e7ff
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Quarter]
+
+		annotation SummarizationSetBy = Automatic
+
+	column ISODate
+		lineageTag: f2889d74-475f-4da7-928f-b7ab446d523e
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [ISODate]
+
+		annotation SummarizationSetBy = Automatic
+
+	column DD/MM/YYYY
+		lineageTag: 7721af9a-b902-4d7a-a331-54f988f186b0
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [DD/MM/YYYY]
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayOfMonth
+		formatString: 0
+		lineageTag: 6705156c-28c4-40eb-bb06-735a5c120dc6
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [DayOfMonth]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Day and Month'
+		lineageTag: cb559868-9a96-4b54-8c78-4379cf8d4b2a
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Day and Month]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Day and Month and Year'
+		lineageTag: 905a1b93-1ac8-4c11-8cc3-8d3e227e2271
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Day and Month and Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayOfMonthFull
+		lineageTag: a1ea94ed-ebbc-4d45-9ea3-091b435b10b1
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [DayOfMonthFull]
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayOfWeek
+		formatString: 0
+		lineageTag: 4889dee6-68b7-4d86-9bba-d3b0159fe049
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [DayOfWeek]
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayOfWeekFull
+		lineageTag: 470f1eef-0cf6-4bc5-94d7-15bc7fe71762
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [DayOfWeekFull]
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayOfWeekAbbr
+		lineageTag: 104c5a23-1146-4707-b9e0-f8a5fa94bfe7
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [DayOfWeekAbbr]
+
+		annotation SummarizationSetBy = Automatic
+
+	column QuarterAbbr
+		lineageTag: 3a7ddcf0-9752-412b-b4c3-1bce19d47f0d
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [QuarterAbbr]
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthAndYearAbbr
+		lineageTag: 92181d13-2dea-43e5-8e8e-f7b5e19a0214
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [MonthAndYearAbbr]
+
+		annotation SummarizationSetBy = Automatic
+
+	column QuarterAndYearNum
+		lineageTag: cd600c55-555d-4be0-814c-5b248df08d2a
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [QuarterAndYearNum]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition #DateTable = calculated
+		mode: import
+		source =
+				
+				VAR BaseCalendar =
+				    CALENDAR(
+				        MIN('Dates'[Date]), MAX('Dates'[Date]))
+				
+				RETURN
+				    GENERATE(
+				        BaseCalendar,
+				        VAR BaseDate = [Date]
+				        VAR FullYear = YEAR(BaseDate)
+				        VAR Month_ = FORMAT(BaseDate, "MMM")
+				        VAR MonthNumber = MONTH(BaseDate)
+				        VAR QuarterNumber = ROUNDDOWN(MONTH([Date])/4,0)+1
+				        VAR QuarterAndYear =  QuarterNumber & " " & FullYear
+				        VAR MonthNumberFull = FORMAT(BaseDate, "MM")
+				        VAR DayOfMonthFull = FORMAT(DAY(BaseDate),"00")
+				        RETURN ROW(
+				            "Year - Full", YEAR(BaseDate),
+				            "Year - Short", VALUE(Right(Year(BaseDate),2)),
+				            "MonthNumber", MONTH(BaseDate),
+				            "MonthNumberFull", FORMAT(BaseDate, "MM"),
+				            "Month - Full", FORMAT(BaseDate, "MMMM"),
+				            "Month - Short", FORMAT(BaseDate, "MMM"),
+				            "WeekNumber", WEEKNUM(BaseDate),
+				            "WeekNumberFull", FORMAT(Weeknum(BaseDate), "00"),
+				            "QuarterFull", "Quarter " & ROUNDDOWN(MONTH(BaseDate)/4,0)+1,
+				            "QuarterNumber", ROUNDDOWN(MONTH(BaseDate)/4,0)+1,
+				            "QuarterAndYear", QuarterNumber & " " & FullYear,
+				            "YearMonthNum", VALUE(FullYear & MonthNumberFull),
+				            "Quarter", "Q" & ROUNDDOWN(MONTH([Date])/4,0)+1,
+				            "ISODate", FullYear & MonthNumberFull & DayOfMonthFull,
+				            "DD/MM/YYYY", DayOfMonthFull & "/" & MonthNumberFull & "/" & FullYear,
+				            "DayOfMonth", DAY(BaseDate),
+				            "Day and Month", DAY(BaseDate) &"-"& Month_,
+				            "Day and Month and Year", DAY(BaseDate) &" "& Month_ &" "& VALUE(Right(Year(BaseDate),2)),
+				            "DayOfMonthFull", FORMAT(DAY(BaseDate),"00"),
+				            "DayOfWeek", WEEKDAY(BaseDate,2),
+				            "DayOfWeekFull", FORMAT(BaseDate, "DDDD"),
+				            "DayOfWeekAbbr", FORMAT(BaseDate, "DDD"),
+				            "QuarterAbbr", "Qtr" & ROUNDDOWN(MONTH(BaseDate)/4,0)+1,
+				            "MonthAndYearAbbr", Month_ & " " & FullYear,
+				            "QuarterAndYearNum", FullYear & QuarterNumber
+				        )
+				    )
+
+	annotation PBI_Id = 1c16f0483b1a4fb9b4435b2732c554b4
+

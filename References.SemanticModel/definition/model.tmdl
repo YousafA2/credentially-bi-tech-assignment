@@ -15,7 +15,7 @@ queryGroup References
 
 annotation __PBI_TimeIntelligenceEnabled = 0
 
-annotation PBIDesktopVersion = 2.140.1078.0 (25.02)+2cce24fb16e8b71ba835921d23e7ffc1fab909df
+annotation PBIDesktopVersion = 2.140.1205.0 (25.02)+2ab3defe107764e1cf486b42122d9362df7f34ea
 
 annotation PBI_QueryOrder = ["ref_references","ref_assigned_to","ref_user_tags","ref_job_positions"]
 
@@ -26,6 +26,7 @@ ref table ref_references
 ref table ref_assigned_to
 ref table ref_user_tags
 ref table ref_job_positions
+ref table #DateTable
 
 ref role Admin
 

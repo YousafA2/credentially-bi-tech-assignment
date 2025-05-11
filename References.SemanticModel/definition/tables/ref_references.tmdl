@@ -86,6 +86,21 @@ table ref_references
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure 'Avg Requested To Reviewed Days' = AVERAGE(ref_references[requested_to_reviewed_days])
+		lineageTag: ebed6fcf-72d5-4089-bace-08fe6bcc3c5d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Avg Requested To Submitted Days' = AVERAGE(ref_references[requested_to_completed_days])
+		lineageTag: b30706fa-6874-48d2-9bcb-e1430adb10bd
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Avg Submitted To Reviewed Days' = AVERAGE(ref_references[completed_to_reviewed_days])
+		lineageTag: 41257adf-4963-442a-9177-43a5a46ff34b
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column completed_to_reviewed_days
 		dataType: int64
 		lineageTag: 23629e9c-98e8-470a-b6a3-04d973f3462c

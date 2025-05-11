@@ -5,13 +5,13 @@
       "ordinal": 0,
       "scrollPosition": {
         "x": 0,
-        "y": 0
+        "y": 25
       },
       "nodes": [
         {
           "location": {
             "x": 1180.9240689139137,
-            "y": 151.93189318943809
+            "y": 227.89783978415716
           },
           "nodeIndex": "Dates",
           "nodeLineageTag": "73e62dc6-d45a-4e33-976a-244d6b15f2a4",
@@ -19,12 +19,12 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 4
+          "zIndex": 5
         },
         {
           "location": {
-            "x": 1423.6646073363331,
-            "y": 804.89780923857575
+            "x": 1430.6090517807777,
+            "y": 785.03042249996156
           },
           "nodeIndex": "ref_references",
           "nodeLineageTag": "b885eee8-b7ee-4f2f-9ec6-ed55be4ca767",
@@ -36,8 +36,8 @@
         },
         {
           "location": {
-            "x": 677.7439127812786,
-            "y": 959.92160991469109
+            "x": 663.85502389238968,
+            "y": 903.9431120649657
           },
           "nodeIndex": "ref_assigned_to",
           "nodeLineageTag": "a23d70a0-906b-45e9-b6eb-f2e54271fa06",
@@ -45,12 +45,12 @@
             "height": 170.60443583734286,
             "width": 234
           },
-          "zIndex": 1
+          "zIndex": 2
         },
         {
           "location": {
-            "x": 421.23416105618981,
-            "y": 762.62971846119535
+            "x": 310.12304994507866,
+            "y": 621.92899838924779
           },
           "nodeIndex": "ref_user_tags",
           "nodeLineageTag": "a9ac1f29-0185-4949-9b4f-83e4f58c3585",
@@ -58,12 +58,12 @@
             "height": 145,
             "width": 234
           },
-          "zIndex": 2
+          "zIndex": 3
         },
         {
           "location": {
-            "x": 879.77881885447414,
-            "y": 632.162499919368
+            "x": 777.00104107669631,
+            "y": 506.73955762519819
           },
           "nodeIndex": "ref_job_positions",
           "nodeLineageTag": "c6ad059b-91b3-4e83-b2a0-1919aec754db",
@@ -71,11 +71,24 @@
             "height": 145,
             "width": 234
           },
-          "zIndex": 3
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 832.26377961347669,
+            "y": 151.75446017484344
+          },
+          "nodeIndex": "#DateTable",
+          "nodeLineageTag": "5652d301-5b56-46c5-bcc8-d763663bf53b",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 1
         }
       ],
       "name": "All tables",
-      "zoomValue": 44.596295260284755,
+      "zoomValue": 72,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

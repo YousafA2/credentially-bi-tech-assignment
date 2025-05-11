@@ -31,3 +31,9 @@ relationship 77609265-7c0d-778d-f4fa-6b4b1ec4f6a5
 	fromColumn: ref_references.ref_approved_date
 	toColumn: Dates.Date
 
+relationship 27a584a6-0f33-90fa-c3cc-d5f0d61c36e9
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Dates.Date
+	toColumn: #DateTable.Date
+

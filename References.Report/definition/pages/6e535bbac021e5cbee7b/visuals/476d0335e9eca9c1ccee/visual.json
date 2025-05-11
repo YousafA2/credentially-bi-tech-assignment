@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.5.0/schema.json",
+  "name": "476d0335e9eca9c1ccee",
+  "position": {
+    "x": 0,
+    "y": 771.70731707317077,
+    "z": 3000,
+    "height": 28.292682926829272,
+    "width": 212.68292682926833,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Produced by Yousaf Ajmal",
+                    "textStyle": {
+                      "fontStyle": "italic",
+                      "fontSize": "9pt"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

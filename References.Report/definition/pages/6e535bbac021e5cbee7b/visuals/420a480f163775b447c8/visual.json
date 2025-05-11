@@ -1,0 +1,54 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.5.0/schema.json",
+  "name": "420a480f163775b447c8",
+  "position": {
+    "x": 762.26008968609869,
+    "y": 82.654708520179369,
+    "z": 7000,
+    "height": 70.026905829596416,
+    "width": 332.914798206278,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "#DateTable"
+                    }
+                  },
+                  "Property": "Month - Full"
+                }
+              },
+              "queryRef": "#DateTable.Month - Full",
+              "nativeQueryRef": "Month - Full",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Dropdown'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
